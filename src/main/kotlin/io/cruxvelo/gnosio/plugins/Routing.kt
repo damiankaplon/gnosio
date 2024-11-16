@@ -1,15 +1,13 @@
-package io.crux
-
--velo.gnosio.plugins
+package io.cruxvelo.gnosio.plugins
 
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
 fun Application.configureRouting() {
-	routing {
-		get("/") {
-			call.respondText("Hello World!")
-		}
-	}
+    routing {
+        get("/") {
+            call.respondText("Hello World!")
+        }
+    }
 }
